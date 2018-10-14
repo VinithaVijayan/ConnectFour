@@ -14,6 +14,9 @@
 		8C595845202658360043585D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C595843202658360043585D /* LaunchScreen.storyboard */; };
 		8C595850202658360043585D /* DropBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C59584F202658360043585D /* DropBallTests.swift */; };
 		8C59585B202658360043585D /* DropBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C59585A202658360043585D /* DropBallUITests.swift */; };
+		8C778E50202A35F800D85894 /* BallDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C778E4F202A35F800D85894 /* BallDataSource.swift */; };
+		8C778E52202A366F00D85894 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C778E51202A366F00D85894 /* Constants.swift */; };
+		8C778E54202A391E00D85894 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C778E53202A391E00D85894 /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		8C595856202658360043585D /* DropBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C59585A202658360043585D /* DropBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropBallUITests.swift; sourceTree = "<group>"; };
 		8C59585C202658360043585D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C778E4F202A35F800D85894 /* BallDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallDataSource.swift; sourceTree = "<group>"; };
+		8C778E51202A366F00D85894 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C778E53202A391E00D85894 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				8C59583A202658360043585D /* AppDelegate.swift */,
 				8C59583C202658360043585D /* ViewController.swift */,
+				8C778E51202A366F00D85894 /* Constants.swift */,
+				8C778E4F202A35F800D85894 /* BallDataSource.swift */,
 				8C59583E202658360043585D /* Main.storyboard */,
+				8C778E53202A391E00D85894 /* Cell.swift */,
 				8C595841202658360043585D /* Assets.xcassets */,
 				8C595843202658360043585D /* LaunchScreen.storyboard */,
 				8C595846202658360043585D /* Info.plist */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C778E50202A35F800D85894 /* BallDataSource.swift in Sources */,
 				8C59583D202658360043585D /* ViewController.swift in Sources */,
+				8C778E54202A391E00D85894 /* Cell.swift in Sources */,
 				8C59583B202658360043585D /* AppDelegate.swift in Sources */,
+				8C778E52202A366F00D85894 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,11 +438,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HPZ49H3YY7;
 				INFOPLIST_FILE = DropBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = apple.com.DropBall;
+				PRODUCT_BUNDLE_IDENTIFIER = vinitha.DropBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +456,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HPZ49H3YY7;
 				INFOPLIST_FILE = DropBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = apple.com.DropBall;
+				PRODUCT_BUNDLE_IDENTIFIER = vinitha.DropBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
